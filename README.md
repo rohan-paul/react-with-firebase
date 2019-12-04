@@ -24,4 +24,3 @@ The site is running at - [http://localhost:3000/dashboard](http://localhost:3000
 #### To run the tests
 
 `cd client` and then `npm test`
-

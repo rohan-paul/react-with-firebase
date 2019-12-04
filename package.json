@@ -30,6 +30,7 @@
         "eslint-plugin-jsx-a11y": "^6.2.3",
         "eslint-plugin-react": "^7.16.0",
         "file-loader": "^5.0.2",
+        "firebase": "^7.5.0",
         "highcharts": "^7.2.1",
         "highcharts-react-official": "^2.2.2",
         "history": "^4.10.1",
@@ -55,6 +56,8 @@
         "react-scripts": "^3.2.0",
         "react-table": "^6.10.3",
         "reactstrap": "^8.1.1",
+        "redux": "^4.0.4",
+        "redux-thunk": "^2.3.0",
         "sinon": "^7.5.0",
         "styled-components": "^4.4.1"
     },

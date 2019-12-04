@@ -54,6 +54,9 @@ nbproject
 *.sublime-workspace
 .idea
 
+# Ignore specific files
+src/firebase.js
+
 # Komodo
 *.komodoproject
 .komodotools

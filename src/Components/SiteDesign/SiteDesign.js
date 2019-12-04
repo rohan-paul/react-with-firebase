@@ -40,7 +40,6 @@ import SystemIcon from "../../assets/Images/Icons/runer-silhouette-running-fast.
 import UsersIcon from "../../assets/Images/Icons/custom-web-design-free-template.png";
 import ToolsIcon from "../../assets/Images/Icons/images.jpg";
 import DepartmentsIcon from "../../assets/Images/Icons/Bold-and-Vibrant-colors.png";
-import TransportIcon from "../../assets/Images/Icons/bitcoin.svg";
 import ProductionIcon from "../../assets/Images/Icons/tools.png";
 import ResearchIcon from "../../assets/Images/Icons/startup-idea-innovation-business-bulb-big-thing.png";
 import EducationIcon from "../../assets/Images/Icons/education.png";
@@ -50,7 +49,7 @@ import OnBoardPortsIcon from "../../assets/Images/Icons/images.jpeg";
 import OptionsIcon from "../../assets/Images/Icons/options.png";
 import ComputerIcon from "../../assets/Images/Icons/artwork_2x.png";
 import TruckIcon from "../../assets/Images/Icons/fast.svg";
-import AllRoutes from "../../Routes/DashboardRoutes";
+import DashboardRoutes from "../../Routes/DashboardRoutes";
 
 class SiteDesign extends React.Component {
   state = {
@@ -153,15 +152,15 @@ class SiteDesign extends React.Component {
                   noWrap
                 />
               ) : (
-                <Typography
-                  variant="h6"
-                  color="inherit"
-                  className={classes.title}
-                  noWrap
-                >
-                  REACT APP
+                  <Typography
+                    variant="h6"
+                    color="inherit"
+                    className={classes.title}
+                    noWrap
+                  >
+                    REACT APP
                 </Typography>
-              )}
+                )}
               <Switch
                 checked={themeType}
                 onChange={handleThemeTypeChange}
@@ -271,8 +270,8 @@ class SiteDesign extends React.Component {
               {theme.direction === "rtl" ? (
                 <ChevronRightIcon />
               ) : (
-                <ChevronLeftIcon />
-              )}
+                  <ChevronLeftIcon />
+                )}
             </IconButton>
           </div>
           <Divider />
@@ -375,51 +374,9 @@ class SiteDesign extends React.Component {
           </List>
           <Divider />
           <List>
-            <ListItem
-              button
-              key="Stock Dashboard"
-              component={Link}
-              to="/stock_dashboard"
-            >
-              <ListItemIcon>
-                <img
-                  src={ToolsIcon}
-                  className={classes.sideNavBarIcon}
-                  alt=""
-                />
-              </ListItemIcon>
-              <ListItemText primary="Stock Dashboard" />
-            </ListItem>
-            <ListItem
-              button
-              key="CSV Parsing"
-              component={Link}
-              to="/csvparsing"
-            >
-              <ListItemIcon>
-                <img
-                  src={DepartmentsIcon}
-                  className={classes.sideNavBarIcon}
-                  alt=""
-                />
-              </ListItemIcon>
-              <ListItemText primary="CSV Parsing" />
-            </ListItem>
-            <ListItem
-              button
-              key="Bitcoin Pricing"
-              component={Link}
-              to="/bitcoin"
-            >
-              <ListItemIcon>
-                <img
-                  src={TransportIcon}
-                  className={classes.sideNavBarIcon}
-                  alt=""
-                />
-              </ListItemIcon>
-              <ListItemText primary="Bitcoin Pricing" />
-            </ListItem>
+
+
+
             <ListItem button key="Division-4" component={Link} to="/route-4">
               <ListItemIcon>
                 <img
@@ -440,46 +397,8 @@ class SiteDesign extends React.Component {
               </ListItemIcon>
               <ListItemText primary="Division-5" />
             </ListItem>
-            <ListItem button key="Division-6" component={Link} to="/route-6">
-              <ListItemIcon>
-                <img
-                  src={EducationIcon}
-                  className={classes.sideNavBarIcon}
-                  alt=""
-                />
-              </ListItemIcon>
-              <ListItemText primary="Division-6" />
-            </ListItem>
-            <ListItem button key="Division-7" component={Link} to="/route-7">
-              <ListItemIcon>
-                <img
-                  src={HackingIcon}
-                  className={classes.sideNavBarIcon}
-                  alt=""
-                />
-              </ListItemIcon>
-              <ListItemText primary="Division-7" />
-            </ListItem>
-            <ListItem button key="Division-8" component={Link} to="/route-8">
-              <ListItemIcon>
-                <img
-                  src={MoneyIcon}
-                  className={classes.sideNavBarIcon}
-                  alt=""
-                />
-              </ListItemIcon>
-              <ListItemText primary="Division-8" />
-            </ListItem>
-            <ListItem button key="Division-9" component={Link} to="/route-9">
-              <ListItemIcon>
-                <img
-                  src={OnBoardPortsIcon}
-                  className={classes.sideNavBarIcon}
-                  alt=""
-                />
-              </ListItemIcon>
-              <ListItemText primary="Division-9" />
-            </ListItem>
+
+
           </List>
           <Divider />
           <List>
@@ -532,7 +451,7 @@ class SiteDesign extends React.Component {
         </Drawer>
         <main className={classes.content}>
           <div className={classes.toolbar} />
-          <AllRoutes />
+          <DashboardRoutes />
         </main>
       </div>
     );
