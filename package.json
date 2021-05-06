@@ -31,7 +31,7 @@
         "eslint-plugin-react": "^7.16.0",
         "file-loader": "^5.0.2",
         "firebase": "^7.5.0",
-        "highcharts": "^7.2.1",
+        "highcharts": "^9.0.0",
         "highcharts-react-official": "^2.2.2",
         "history": "^4.10.1",
         "material-ui": "^0.20.2",
